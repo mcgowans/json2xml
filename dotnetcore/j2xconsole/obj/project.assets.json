@@ -207,6 +207,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "j2xlib/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/j2xlib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/j2xlib.dll": {}
+        }
       }
     }
   },
@@ -680,11 +690,17 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "j2xlib/1.0.0": {
+      "type": "project",
+      "path": "../j2xlib/j2xlib.csproj",
+      "msbuildProject": "../j2xlib/j2xlib.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "j2xlib >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -716,7 +732,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\m.mcmullin\\Documents\\Code\\Workflow 2\\Utilities\\json2xml\\dotnetcore\\j2xlib\\j2xlib.csproj": {
+              "projectPath": "C:\\Users\\m.mcmullin\\Documents\\Code\\Workflow 2\\Utilities\\json2xml\\dotnetcore\\j2xlib\\j2xlib.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
